@@ -1,0 +1,224 @@
+
+
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>funciones2 module &#8212; documentación de Ejercicio 3 - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="practica module" href="practica.html" />
+    <link rel="prev" title="funciones module" href="funciones.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="practica.html" title="practica module"
+             accesskey="N">siguiente</a> |</li>
+        <li class="right" >
+          <a href="funciones.html" title="funciones module"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Ejercicio 3 - 1.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">3 - Programacion dirigida por la documentacion</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">funciones2 module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-funciones2">
+<span id="funciones2-module"></span><h1>funciones2 module<a class="headerlink" href="#module-funciones2" title="Enlace permanente a este encabezado">¶</a></h1>
+<p>Clase que nos permite manipular las listas</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="funciones2.ErrorCaracter">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">ErrorCaracter</span></span><a class="headerlink" href="#funciones2.ErrorCaracter" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Excepcion para controlar que los caracteres introducidos tiene valor numerico</p>
+<p>&#64;param Exception: String de lo que ha provocado al excepcion
+&#64;type Exception: Tipo Exception
+&#64;return: String con la información de lo que ha provocado la excepcion</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="funciones2.IndiceException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">IndiceException</span></span><a class="headerlink" href="#funciones2.IndiceException" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Excepcion para controlar que el indice a eliminar sea menor que el tamaño de la lista
+&#64;param Exception: La excepcion salta si el indice a eliminar es mas alto que el tamaño de la lista
+&#64;type IndexError: Tipo Exception
+&#64;return: String con la información de lo que ha provocado la excepcion</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones2.anadirLista">
+<span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">añadirLista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones2.anadirLista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion para añadir un elemento al final de la lista</p>
+<p>&#64;param lista: Lista de entrada con valores numericos
+&#64;type lista: list</p>
+<p>&#64;param a: Valor que se quiere introducir
+&#64;type a: int</p>
+<p>&#64;return: Nothing</p>
+<dl class="simple">
+<dt>Raises:</dt><dd><p>ErrorCaracter: Se lanza la excepcion cuando el valor a introducir no es numerico</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones2.maximoLista">
+<span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">maximoLista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones2.maximoLista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que saca el maximo valor de la lista</p>
+<p>&#64;param lista: Lista de entrada con valores numericos
+&#64;type lista: list</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: El valor maximo de la lista</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones2.minimoLista">
+<span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">minimoLista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones2.minimoLista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que saca el minimo valor de la lista</p>
+<p>&#64;param lista: Lista de entrada con valores numericos
+&#64;type lista: list</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: El valor minimo de la lista</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones2.quitarListaInd">
+<span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">quitarListaInd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indice</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones2.quitarListaInd" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion para eliminar un valor de la lista a traves de su indice</p>
+<p>&#64;param lista: Lista de entrada con valores numericos
+&#64;type lista: list</p>
+<p>&#64;param indice: Valor del indice de la lista que se solicita eliminar
+&#64;type a: int</p>
+<dl class="simple">
+<dt>Raises:</dt><dd><p>IndiceException: Se lanza cunado el indice a eliminar es mayor que el tamaño de la lista
+ErrorCaracter: Se lanza la excepcion cuando el valor a introducir no es numerico</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones2.sumarLista">
+<span class="sig-prename descclassname"><span class="pre">funciones2.</span></span><span class="sig-name descname"><span class="pre">sumarLista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones2.sumarLista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que suma los valores de una lista numerica</p>
+<p>&#64;param lista: Lista de entrada con valores numericos
+&#64;type lista: list</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: Resultado de la suma de todos los valores de la lista pasada por argumento</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Tabla de contenido</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">funciones2 module</a><ul>
+<li><a class="reference internal" href="#funciones2.ErrorCaracter"><code class="docutils literal notranslate"><span class="pre">ErrorCaracter</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.IndiceException"><code class="docutils literal notranslate"><span class="pre">IndiceException</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.anadirLista"><code class="docutils literal notranslate"><span class="pre">añadirLista()</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.maximoLista"><code class="docutils literal notranslate"><span class="pre">maximoLista()</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.minimoLista"><code class="docutils literal notranslate"><span class="pre">minimoLista()</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.quitarListaInd"><code class="docutils literal notranslate"><span class="pre">quitarListaInd()</span></code></a></li>
+<li><a class="reference internal" href="#funciones2.sumarLista"><code class="docutils literal notranslate"><span class="pre">sumarLista()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Tema anterior</h4>
+    <p class="topless"><a href="funciones.html"
+                          title="capítulo anterior">funciones module</a></p>
+  </div>
+  <div>
+    <h4>Próximo tema</h4>
+    <p class="topless"><a href="practica.html"
+                          title="próximo capítulo">practica module</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/funciones2.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="practica.html" title="practica module"
+             >siguiente</a> |</li>
+        <li class="right" >
+          <a href="funciones.html" title="funciones module"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Ejercicio 3 - 1.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >3 - Programacion dirigida por la documentacion</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">funciones2 module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2023, Mario Martin.
+      Creado usando <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    </div>
+  </body>
+</html>
